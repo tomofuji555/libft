@@ -6,7 +6,7 @@
 /*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:41:58 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/01 18:41:59 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/14 16:28:51 by tofujiwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *s)
 	size_t	i;
 
 	i = 0;
-	while (s[i] != '\0')
+	while (s[i])
 		i++;
 	return (i);
 }

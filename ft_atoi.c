@@ -6,7 +6,7 @@
 /*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:36:25 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/08 18:39:28 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/14 16:24:47 by tofujiwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ int	ft_atoi(const char *str)
 	sign = st_isspace(str, &pi);
 	i = pi;
 	num = 0;
-	while (str[i] != '\0' && str[i] >= '0' && str[i] <= '9')
+	while (str[i] && str[i] >= '0' && str[i] <= '9')
 	{
 		if (plus_overflow_check(num, sign, str[i]) == 1 && sign == 1)
 			return ((int)LONG_MAX);

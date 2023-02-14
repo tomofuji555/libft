@@ -6,7 +6,7 @@
 /*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:42:46 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/14 15:44:52 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/14 16:12:47 by tofujiwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	if (!len)
 		return (NULL);
 	new_len = ft_strlen(needle);
-	while (*haystack != '\0' && len >= new_len && len > 0)
+	while (*haystack && len >= new_len && len)
 	{
 		if (ft_strncmp(haystack, needle, new_len) == 0)
 			return ((char *)haystack);

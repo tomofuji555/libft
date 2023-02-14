@@ -6,7 +6,7 @@
 /*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:41:32 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/08 16:44:57 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/14 16:28:27 by tofujiwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	j = d_len;
 	if (d_len < size)
 	{
-		while (i < size - d_len - 1 && src[i] != '\0')
+		while (i < size - d_len - 1 && src[i])
 		{
 			dst[j] = src[i];
 			j++;

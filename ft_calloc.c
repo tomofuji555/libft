@@ -6,7 +6,7 @@
 /*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:36:49 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/01 18:36:52 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/14 16:25:58 by tofujiwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,17 @@ void	*ft_calloc(size_t n, size_t nsize)
 	size_t	size;
 	void	*block;
 
-	if (n == 0 || nsize == 0)
+	if (!n || !nsize)
 	{
 		n = 1;
 		nsize = 1;
 	}
 	size = n * nsize;
-	if (size != 0 && n > SIZE_MAX / size)
+	if (size && n > SIZE_MAX / size)
 		return (NULL);
 	if (nsize != size / n)
 		return (NULL);
-	block = malloc(size);
+	block = (char *)malloc(size);
 	if (!block)
 		return (NULL);
 	ft_bzero(block, size);
