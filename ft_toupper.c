@@ -6,7 +6,7 @@
 /*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:43:42 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/04 15:41:33 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/14 18:22:14 by tofujiwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,7 @@ int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{
-		c = c + ('A' - 'a');
-		return (c);
+		return (c + ('A' - 'a'));
 	}
 	else
 		return (c);

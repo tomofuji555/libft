@@ -6,7 +6,7 @@
 /*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:43:31 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/01 18:50:15 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/14 18:21:53 by tofujiwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,7 @@ int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 	{
-		c = c - ('A' - 'a');
-		return (c);
+		return (c - ('A' - 'a'));
 	}
 	else
 		return (c);
