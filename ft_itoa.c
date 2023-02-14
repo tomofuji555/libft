@@ -6,7 +6,7 @@
 /*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:38:02 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/14 17:30:37 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/14 17:58:27 by tofujiwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static size_t	count_len(int n)
 {
-	long int	temp;
+	long		temp;
 	size_t		len;
 
 	temp = n;
@@ -33,7 +33,7 @@ char	*ft_itoa(int n)
 {
 	char		*number;
 	size_t		number_len;
-	long int	temp;
+	long		temp;
 
 	temp = n;
 	number_len = count_len (n);
