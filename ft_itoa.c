@@ -6,7 +6,7 @@
 /*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:38:02 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/04 15:53:30 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/14 17:30:37 by tofujiwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char	*ft_itoa(int n)
 	if (n < 0)
 		temp = -temp;
 	number[number_len] = '\0';
-	while (number_len -- > 0)
+	while (number_len --)
 	{
 		number[number_len] = temp % 10 + '0';
 		temp = temp / 10;

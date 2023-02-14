@@ -6,7 +6,7 @@
 /*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:42:09 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/04 15:42:40 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/14 17:38:42 by tofujiwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!s || !f)
 		return (NULL);
 	heap = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
-	if (heap == NULL)
+	if (!heap)
 		return (NULL);
 	i = 0;
 	while (*s)

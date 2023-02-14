@@ -6,7 +6,7 @@
 /*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 15:46:28 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/04 20:06:26 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/14 17:40:33 by tofujiwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,15 +26,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	i = 0;
 	j = 0;
-	while (s1[i] != '\0')
-	{
+	while (s1[i])
 		str[j++] = s1[i++];
-	}
 	i = 0;
-	while (s2[i] != '\0')
-	{
+	while (s2[i])
 		str[j++] = s2[i++];
-	}
 	str[j] = '\0';
 	return (str);
 }

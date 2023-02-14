@@ -6,7 +6,7 @@
 /*   By: tofujiwa <tofujiwa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:40:44 by tofujiwa          #+#    #+#             */
-/*   Updated: 2023/02/14 16:30:44 by tofujiwa         ###   ########.fr       */
+/*   Updated: 2023/02/14 17:37:54 by tofujiwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strchr(char *s, int c)
 
 	ch = (char)c;
 	i = 0;
-	while (s[i] != '\0')
+	while (s[i])
 	{
 		if (s[i] == ch)
 			return (s + i);
